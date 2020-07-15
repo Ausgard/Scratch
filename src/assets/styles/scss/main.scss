@@ -1,0 +1,11 @@
+//vars
+
+@import "./utils/vars.scss";
+@import "./utils/mixins";
+@import "./utils/fonts";
+
+//modules
+
+@import "./modules/logo/index.scss";
+@import "./modules/onboarding/index.scss";
+@import "./modules/background/index.scss";

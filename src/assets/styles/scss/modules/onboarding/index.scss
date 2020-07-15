@@ -1,0 +1,46 @@
+.onboarding {
+    display: none;
+}
+
+@media screen and (min-width: $tabletWidth + px) and (max-width: $desktopWidth + px) {
+    .onboarding {
+        @include flexGrid(column, flex-start, center, nowrap);
+        width: vw($tabletWidth, 498);
+        margin: 238px auto 0 auto;
+    }
+
+    .onboarding__headline {
+        @include fontOptions (40, 40, $tabletWidth, $desktopWidth, $mainFont_sb, 700, 56, -0.012em, $textDecoration, $textTransform, $mainBlack);
+        text-align: center;
+        margin: 0 0 0 0;
+    }
+
+    .onboarding__description {
+        @include fontOptions (14, 14, $tabletWidth, $desktopWidth, $mainFont, $fontWeight, 22, 0, $textDecoration, $textTransform, #606060);
+        width: vw($tabletWidth, 314);
+        text-align: center;
+        margin: 7.36px 0 0 0;
+    }
+
+    .onboarding__btn-block {
+        @include flexGrid(row, space-between, center, nowrap);
+        width: 100%;
+        max-width: 498px;
+        margin: 35px 0 0 0;
+    }
+
+    .onboarding__join,
+    .onboarding__learn {
+        @include fontOptions (16, 16, $tabletWidth, $desktopWidth, $mainFont_b, 500, 21, 0, $textDecoration, capitalize, #ffffff);
+        @include btnCentered (solid, 2px, $mainGreen, 8px, 8px, 8px, 8px, $mainGreen);
+        width: 239px;
+        height: 50px;
+        color: #ffffff;
+    }
+
+    .onboarding__learn {
+        color: $mainGreen;
+        background-color: #ffffff;
+    }
+
+}

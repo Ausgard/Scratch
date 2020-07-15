@@ -1,0 +1,31 @@
+//font
+$mainFont: 'Nunito-Regular', 'Helvetica', 'Arial', sans-serif;
+$mainFont_b: 'Nunito-Bold', 'Helvetica', 'Arial', sans-serif;
+$mainFont_sb: 'Nunito-SemiBold', 'Helvetica', 'Arial', sans-serif;
+
+// $headlineFont: 'SFProText-Regular', 'Georgia', 'Times', serif;
+
+$fontWeight: 400;
+$letterSpacing: 0.00em;
+$lineHeight: auto;
+$textTransform: none;
+$textDecoration: none;
+
+//colors
+$fontColor: #1F3F68;
+
+$mainGreen: #30BE76;
+$mainGreen02: rgba(#30BE76, 0.2);
+$mainBlack: #030F09;
+
+$sysRed: #F84971;
+$sysOrange: #F8B449;
+$bgGray01: #767676;
+$bgGray02: #CCCCCC;
+$bgGray03: #E5E5E5;
+$bgWhite: #F7F8FA;
+
+//media
+$desktopWidth: 1440;
+$tabletWidth: 768;
+$phoneWidth: 375;

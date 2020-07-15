@@ -1,0 +1,20 @@
+.logo {
+    @include flexGrid($f-direction, space-between, $a-content, $f-wrap);
+    @include centeredElem (absolute);
+    width: 98px;
+    height: 25.81px;
+    top: 374px;
+    left: 43.9%;
+}
+
+.logo__text {
+    @include fontOptions(20, 20, $phoneWidth, $desktopWidth, $mainFont_b, $fontWeight, 20, 0.02em, $textDecoration, lowercase, rgba(#363837, 1));
+    margin: 4% 0 0 0;
+}
+
+@media screen and (min-width: $tabletWidth + px) and (max-width: $desktopWidth + px) {
+    .logo {
+        top: 11.6%;
+        left: 49.9%;
+    }
+}
