@@ -6,3 +6,19 @@
     background-size: 100%;
     background-position: 50% 337px;
 }
+
+@media screen and (min-width: $tabletWidth + px) and (max-width: $desktopWidth + px) {
+    .background {
+        background-image: url('/src/assets/img/bg-image_tablet.png');
+        background-position: 50% 0;
+        min-height: 786px;
+    }
+}
+
+@media screen and (min-width: $desktopWidth + px) {
+    .background {
+        background-image: url('/src/assets/img/bg-image_desktop.png');
+        background-position: 50% 0;
+        min-height: 720px;
+    }
+}

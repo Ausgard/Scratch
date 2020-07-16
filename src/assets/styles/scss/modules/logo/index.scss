@@ -4,7 +4,16 @@
     width: 98px;
     height: 25.81px;
     top: 374px;
-    left: 43.9%;
+    left: 50%;
+}
+
+.logo__link {
+    width: 18px;
+    height: 26px;
+    svg {
+        width: inherit;
+        height: inherit;
+    }
 }
 
 .logo__text {
@@ -14,7 +23,14 @@
 
 @media screen and (min-width: $tabletWidth + px) and (max-width: $desktopWidth + px) {
     .logo {
-        top: 11.6%;
+        top: 94px;
         left: 49.9%;
+    }
+}
+
+@media screen and (min-width: $desktopWidth + px) {
+    .logo {
+        top: 75px;
+        left: 9%;
     }
 }
