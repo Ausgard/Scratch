@@ -12,7 +12,7 @@ $textTransform: none;
 $textDecoration: none;
 
 //colors
-$fontColor: #1F3F68;
+$fontColor: #606060;
 
 $mainGreen: #30BE76;
 $mainGreen02: rgba(#30BE76, 0.2);
@@ -23,10 +23,11 @@ $sysOrange: #F8B449;
 $bgGray01: #767676;
 $bgGray02: #CCCCCC;
 $bgGray03: #E5E5E5;
+$bgGray04: #A8A8A8;
 $bgWhite: #F7F8FA;
 
 //media
-$lgDesktopWidth: 2560;
+// $lgDesktopWidth: 2560;
 $desktopWidth: 1440;
 $tabletWidth: 768;
-$phoneWidth: 320;
+$phoneWidth: 375;

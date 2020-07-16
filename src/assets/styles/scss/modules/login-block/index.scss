@@ -1,0 +1,92 @@
+.login-block {
+    @include flexGrid (column, $j-content, $a-items, $f-wrap);
+}
+
+.login-block__form {
+    width: 100%;
+    min-height: 526px;
+    background-color: #ffffff;
+}
+
+.login-block__headline {
+    @include fontOptions (24, 24, $phoneWidth, $desktopWidth, $mainFont_b, 500, 32, $letterSpacing, $textDecoration, $textTransform, $mainBlack);
+    margin: 108px 0 32vw 6.5%;
+}
+
+.login-block__description {
+    @include fontOptions (14, 14, $phoneWidth, $desktopWidth, $mainFont, $fontWeight, 22, $letterSpacing, $textDecoration, $textTransform, $fontColor);
+    width: 45%;
+    margin: 21px 0 0 6.5%;
+}
+
+.login-block__email,
+.login-block__password {
+    label {
+        @include fontOptions (14, 14, $phoneWidth, $desktopWidth, $mainFont, $fontWeight, 22, $letterSpacing, $textDecoration, $textTransform, $bgGray04);
+    }
+    input {
+        @include fontOptions (16, 16, $phoneWidth, $desktopWidth, $mainFont, $fontWeight, 22, $letterSpacing, $textDecoration, $textTransform, $mainBlack);
+        width: 100%;
+        border: none;
+        border-bottom: solid 1px $bgGray02;
+    }
+}
+
+.login-block__email {
+    @include flexGrid (column, $j-content, $a-items, $f-wrap);
+    width: 86.8%;
+    margin: 48px 0 0 6.5%;
+    input {
+        padding: 16px 0 5px 0;
+    }
+}
+
+.login-block__password {
+    @include flexGrid (row, space-between, $a-items, wrap);
+    width: 86.8%;
+    margin: 31px 0 0 6.5%;
+    input[type="password"] {
+        padding: 9px 0 5px;
+        height: 28px;
+        font-size: 37px;
+        line-height: 1;
+        letter-spacing: -0.14em;
+    }
+}
+
+.login-block__password-forget {
+    @include fontOptions (14, 14, $phoneWidth, $desktopWidth, $mainFont, $fontWeight, 22, $letterSpacing, $textDecoration, $textTransform, $fontColor);
+    background-color: transparent;
+    border: none;
+    padding: 0 0 0 0;
+}
+
+.login-block__submit {
+    min-width: 325px;
+    height: 50px;
+    width: 80%;
+    margin: 30px auto 0;
+    &:hover,
+    &:active {
+        background-color: #ffffff;
+        color: $mainGreen;
+    }
+}
+
+.login-block__text {
+    width: 100%;
+    @include fontOptions (14, 14, $phoneWidth, $desktopWidth, $mainFont, $fontWeight, 22, $letterSpacing, $textDecoration, $textTransform, $bgGray04);
+    text-align: center;
+    margin: 31px 0 0 0;
+}
+
+.login-block__new {
+    @include flexGrid (column, center, center, $f-wrap);
+    @include fontOptions (16, 16, $phoneWidth, $desktopWidth, $mainFont_b, $fontWeight, 16, 0.01em, $textDecoration, $textTransform, $mainGreen);
+    width: 100%;
+    margin: 6px 0 0 0;
+    &:hover,
+    &:active {
+        color: rgba(#28a466, 1);
+    }
+}

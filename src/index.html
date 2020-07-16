@@ -3,9 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
 </head>
-<body>
-    <button class="accentBtn">sssss</button>
+<body class="background background--login">
+    <div class="logo logo--login">
+        <a class="logo__link" href="#">
+            <svg>
+                <use xlink:href="assets/img/sprite.svg#icon-logo"></use>
+            </svg>
+        </a>
+        <p class="logo__text">Scratch</p>
+    </div>
+    <section class="login-block">
+        <h1 class="login-block__headline">Welcome Back!</h1>
+        <form class="login-block__form" action="#">
+            <p class="login-block__description">Please login to continue.</p>
+            <div class="login-block__email">
+                <label for="email">Email address</label>
+                <input type="email" name="email" id="log-email">
+            </div>
+            <div class="login-block__password">
+                <label for="password">Password</label>
+                <button class="login-block__password-forget">Forgot password?</button>
+                <input type="password" name="password" id="log-password">
+            </div>
+            <button class="accentBtn login-block__submit">login</button>
+            <p class="login-block__text">New to Scratch?</p>
+            <a class="login-block__new" href="#">Create Account Here</a>
+        </form>
+    </section>
 </body>
 </html>
