@@ -1,0 +1,4 @@
+.accentBtn {
+    @include fontOptions (16, 16, $tabletWidth, $desktopWidth, $mainFont_b, 500, 21, 0, $textDecoration, capitalize, #ffffff);
+    @include btnCentered (solid, 2px, $mainGreen, 8px, 8px, 8px, 8px, none);
+}

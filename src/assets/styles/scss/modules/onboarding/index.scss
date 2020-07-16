@@ -33,13 +33,12 @@
 
 .onboarding__join,
 .onboarding__learn {
-    @include fontOptions (16, 16, $tabletWidth, $desktopWidth, $mainFont_b, 500, 21, 0, $textDecoration, capitalize, #ffffff);
-    @include btnCentered (solid, 2px, $mainGreen, 8px, 8px, 8px, 8px, $mainGreen);
     width: 239px;
     height: 50px;
-    color: #ffffff;
 }
 .onboarding__join {
+    color: #ffffff;
+    background-color: $mainGreen;
     &:hover,
     &:active {
         color: $mainGreen;
