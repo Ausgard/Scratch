@@ -4,13 +4,13 @@
 
 .login-block__form {
     width: 100%;
-    min-height: 526px;
+    padding: 0 0 124px 0;
     background-color: #ffffff;
 }
 
 .login-block__headline {
     @include fontOptions (24, 24, $phoneWidth, $desktopWidth, $mainFont_b, 500, 32, $letterSpacing, $textDecoration, $textTransform, $mainBlack);
-    margin: 108px 0 32vw 6.5%;
+    margin: 134px 0 32vw 6.5%;
 }
 
 .login-block__description {
@@ -64,7 +64,7 @@
 .login-block__submit {
     min-width: 278px;
     height: 50px;
-    width: 80%;
+    width: 86.5%;
     margin: 30px auto 0;
     &:hover,
     &:active {
@@ -88,5 +88,100 @@
     &:hover,
     &:active {
         color: rgba(#28a466, 1);
+    }
+}
+
+@media screen and (min-width: $tabletWidth + px) and (max-width: $tabletBreakPoint + px) {
+    .login-block {
+        @include flexGrid (column, flex-start, center, $f-wrap);
+        min-height: 1024px;
+    }
+
+    .login-block__form {
+        width: 55.34%;
+        max-width: 650px;
+        min-height: 467px;
+        border-radius: 7px;
+        padding: 0 0 0 0;
+    }
+
+    .login-block__headline {
+        margin: 238px 0 36px 0;
+    }
+
+    .login-block__description {
+        margin: 51px 0 0 11.8%;
+    }
+
+    .login-block__email,
+    .login-block__password {
+        width: 76.6%;
+        margin: 31px 0 0 11.8%;
+    }
+
+    .login-block__submit {
+        width: 76.471%;
+    }
+}
+
+@media screen and (min-width: $desktopWidth + px) {
+    .login-block {
+        @include flexGrid (column, flex-start, flex-end, wrap);
+        position: relative;
+        width: 63.195%;
+        max-width: 910px;
+        height: 25%;
+        min-height: 570px;
+        z-index: 1;
+        background-image: url("/assets/img/bg-svg-login_desktop.svg");
+        border-radius: 8px;
+        margin: 165px auto 0 auto;
+    }
+
+    .login-block__headline {
+        @include flexGrid (column, flex-end, flex-start, wrap);
+        background-color: #ffffff;
+        width: 35.798%;
+        max-width: 700px;
+        height: 92px;
+        margin: 0 0 0 0;
+        padding: 0 60px 0 68px;
+        border-radius: 0 8px 0 0;
+    }
+
+    .login-block__form {
+        @include flexGrid (column, flex-start, flex-start, wrap);
+        width: 35.8%;
+        max-width: 700px;
+        height: 450px;
+        border-radius: 0 0 8px 0;
+        padding: 0 60px 28px 68px;
+    }
+
+    .login-block__description {
+        margin: 11px 0 0 0;
+    }
+
+    .login-block__email,
+    .login-block__password {
+        width: 100%;
+    }
+
+    .login-block__email {
+        margin: 61px 0 0 0;
+    }
+
+    .login-block__password {
+        margin: 32px 0px 0 0;
+    }
+
+    .login-block__password-forget {
+        line-height: 14px;
+    }
+
+    .login-block__submit {
+        min-width: 325px;
+        align-self: center;
+        margin: 40px 0 0 0;
     }
 }

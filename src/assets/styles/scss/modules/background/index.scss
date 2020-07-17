@@ -1,5 +1,4 @@
 .background {
-    min-width: $phoneWidth;
     background-image: url('/src/assets/img/bg-image_mob.png');
     background-repeat: no-repeat;
     background-size: 100%;
@@ -11,11 +10,13 @@
     background-position: 50% 0;
 }
 
-@media screen and (min-width: $tabletWidth + px) and (max-width: $desktopWidth + px) {
+@media screen and (min-width: $tabletWidth + px) and (max-width: $tabletBreakPoint + px) {
     .background {
         background-image: url('/src/assets/img/bg-image_tablet.png');
         background-position: 50% 0;
-        height: 100%;
+    }
+    .background--login {
+        background-image: url('/src/assets/img/bg-image-login_tablet.png');
     }
 }
 
@@ -23,5 +24,21 @@
     .background {
         background-image: url('/src/assets/img/bg-image_desktop.png');
         background-position: 50% 0;
+    }
+
+    .background--login {
+        position: relative;
+        background-image: url('/src/assets/img/bg-image-login_desktop.png');
+        // min-height: 760px;
+        // &:after {
+        //     content: '';
+        //     display: flex;
+        //     position: absolute;
+        //     width: 100%;
+        //     height: 100vh;
+        //     top: 0;
+        //     left: 0;
+        //     background: linear-gradient(180deg, rgba(255, 255, 255, 0.0001) 0%, #FFFFFF 93.29%);
+        // }
     }
 }

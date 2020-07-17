@@ -58,7 +58,7 @@
     }
 }
 
-@media screen and (min-width: $tabletWidth + px) and (max-width: $desktopWidth + px) {
+@media screen and (min-width: $tabletWidth + px) and (max-width: $tabletBreakPoint + px) {
     .onboarding {
         margin: 238px auto 0 auto;
         min-height: 786px;
