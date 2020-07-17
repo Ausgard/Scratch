@@ -15,7 +15,7 @@
 
 .login-block__description {
     @include fontOptions (14, 14, $phoneWidth, $desktopWidth, $mainFont, $fontWeight, 22, $letterSpacing, $textDecoration, $textTransform, $fontColor);
-    width: 45%;
+    width: 48%;
     margin: 21px 0 0 6.5%;
 }
 
@@ -62,7 +62,7 @@
 }
 
 .login-block__submit {
-    min-width: 325px;
+    min-width: 278px;
     height: 50px;
     width: 80%;
     margin: 30px auto 0;

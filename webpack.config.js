@@ -27,7 +27,7 @@ module.exports = {
     },
     plugins: [
         new HTMLWebpackPlugin({
-            template: './index.html'
+            template: './onboarding.html'
         }),
         // new HtmlWebpackInlineSVGPlugin({
         //     runPreEmit: true

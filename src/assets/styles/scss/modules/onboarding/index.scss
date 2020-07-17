@@ -1,6 +1,8 @@
 .onboarding {
     @include flexGrid(column, flex-start, center, nowrap);
+    min-width: $phoneWidth;
     min-height: 812px;
+    height: 100%;
     background: linear-gradient(180deg, #ffffff 50%, rgba(255, 255, 255, 0.0001) 96.11%, rgba(255, 255, 255, 0.0001) 96.11%);
 }
 
@@ -19,8 +21,9 @@
 
 .onboarding__description {
     @include fontOptions (14, 14, $tabletWidth, $desktopWidth, $mainFont, $fontWeight, 22, 0, $textDecoration, $textTransform, #606060);
-    width: 37%;
+    justify-content: center;
     text-align: center;
+    width: 37%;
     margin: 7.36px 0 0 0;
 }
 
@@ -77,7 +80,7 @@
         align-items: flex-start;
         background: none;
         width: 90%;
-        min-height: 720px;
+        min-height: 680px;
         margin: 180px 0 0 5.5%;
     }
 
