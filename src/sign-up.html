@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up</title>
+</head>
+<body class="background background--login">
+    <div class="logo logo--login">
+        <a class="logo__link" href="#">
+            <svg>
+                <use xlink:href="assets/img/sprite.svg#icon-logo"></use>
+            </svg>
+        </a>
+        <p class="logo__text">Scratch</p>
+    </div>
+    <section class="login-block">
+        <h1 class="login-block__headline login-block__headline--sign-up">Start from Scratch</h1>
+        <form class="login-block__form login-block__form--sign-up" action="#">
+            <p class="login-block__description">Create account to continue.</p>
+            <div class="login-block__name">
+                <label for="name">Full name</label>
+                <input type="text" name="name" id="name" required>
+            </div>
+            <div class="login-block__email login-block__email--sign-up">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="log-email" required>
+            </div>
+            <div class="login-block__password login-block__password--sign-up">
+                <label for="password">Password</label>
+                <button class="login-block__password-forget login-block__password-forget--sign-up">Forgot password?</button>
+                <input type="password" name="password" id="log-password" required>
+            </div>
+            <button class="accentBtn login-block__submit login-block__submit--sign-up">Create Account</button>
+            <p class="login-block__text login-block__text--sign-up">Already have an account?</p>
+            <a class="login-block__new" href="/src/login.html">Login Here</a>
+        </form>
+    </section>
+</body>
+</html>

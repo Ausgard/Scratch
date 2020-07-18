@@ -8,6 +8,10 @@
     background-color: #ffffff;
 }
 
+.login-block__form--sign-up {
+    padding: 0 0 46px 0; 
+}
+
 .login-block__headline {
     @include fontOptions (24, 24, $phoneWidth, $desktopWidth, $mainFont_b, 500, 32, $letterSpacing, $textDecoration, $textTransform, $mainBlack);
     margin: 134px 0 32vw 6.5%;
@@ -20,6 +24,7 @@
 }
 
 .login-block__email,
+.login-block__name,
 .login-block__password {
     label {
         @include fontOptions (14, 14, $phoneWidth, $desktopWidth, $mainFont, $fontWeight, 22, $letterSpacing, $textDecoration, $textTransform, $bgGray04);
@@ -32,13 +37,27 @@
     }
 }
 
-.login-block__email {
+.login-block__email,
+.login-block__name {
     @include flexGrid (column, $j-content, $a-items, $f-wrap);
     width: 86.8%;
-    margin: 48px 0 0 6.5%;
+    
     input {
         padding: 16px 0 5px 0;
     }
+}
+
+.login-block__name {
+    text-transform: capitalize;
+    margin: 30px 0 0 6.5%;
+}
+
+.login-block__email {
+    margin: 48px 0 0 6.5%;
+}
+
+.login-block__email--sign-up {
+    margin: 31px 0 0 6.5%;
 }
 
 .login-block__password {
@@ -59,6 +78,10 @@
     background-color: transparent;
     border: none;
     padding: 0 0 0 0;
+}
+
+.login-block__password-forget--sign-up {
+    display: none;
 }
 
 .login-block__submit {
@@ -91,6 +114,10 @@
     }
 }
 
+.login-block__headline--sign-up {
+    margin: 134px 0 24vw 6.5%;
+}
+
 @media screen and (min-width: $tabletWidth + px) and (max-width: $tabletBreakPoint + px) {
     .login-block {
         @include flexGrid (column, flex-start, center, $f-wrap);
@@ -105,6 +132,10 @@
         padding: 0 0 0 0;
     }
 
+    .login-block__form--sign-up {
+        padding: 0 0 50px 0;
+    }
+
     .login-block__headline {
         margin: 238px 0 36px 0;
     }
@@ -114,13 +145,23 @@
     }
 
     .login-block__email,
+    .login-block__name,
     .login-block__password {
         width: 76.6%;
         margin: 31px 0 0 11.8%;
     }
 
+    .login-block__email--sign-up,
+    .login-block__password--sign-up {
+        margin: 26px 0 0 11.8%;
+    }
+
     .login-block__submit {
         width: 76.471%;
+    }
+
+    .login-block__submit--sign-up {
+        margin: 25px auto 0;
     }
 }
 
@@ -149,6 +190,10 @@
         border-radius: 0 8px 0 0;
     }
 
+    .login-block__headline--sign-up {
+        height: 77px;
+    }
+
     .login-block__form {
         @include flexGrid (column, flex-start, flex-start, wrap);
         width: 35.8%;
@@ -158,13 +203,23 @@
         padding: 0 60px 58px 68px;
     }
 
+    .login-block__form--sign-up {
+        padding: 0 60px 0 68px;
+    }
+
     .login-block__description {
+        width: auto;
         margin: 11px 0 0 0;
     }
 
     .login-block__email,
-    .login-block__password {
+    .login-block__password,
+    .login-block__name {
         width: 100%;
+    }
+
+    .login-block__name {
+        margin: 27px 0 0 0;
     }
 
     .login-block__email {
@@ -175,6 +230,11 @@
         margin: 32px 0px 0 0;
     }
 
+    .login-block__email--sign-up,
+    .login-block__password--sign-up {
+        margin: 26px 0 0 0;
+    }
+
     .login-block__password-forget {
         line-height: 14px;
     }
@@ -183,5 +243,12 @@
         min-width: 325px;
         align-self: center;
         margin: 40px 0 0 0;
+    }
+    .login-block__submit--sign-up {
+        margin: 25px 0 0 0;
+    }
+
+    .login-block__text--sign-up {
+        margin: 26px 0 0 0;
     }
 }
