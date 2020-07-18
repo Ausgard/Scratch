@@ -22,6 +22,7 @@
 
 @media screen and (min-width: $desktopWidth + px) {
     .background {
+        display: flex;
         background-image: url('/src/assets/img/bg-image_desktop.png');
         background-position: 50% 0;
     }
@@ -29,16 +30,19 @@
     .background--login {
         position: relative;
         background-image: url('/src/assets/img/bg-image-login_desktop.png');
-        // min-height: 760px;
-        // &:after {
-        //     content: '';
-        //     display: flex;
-        //     position: absolute;
-        //     width: 100%;
-        //     height: 100vh;
-        //     top: 0;
-        //     left: 0;
-        //     background: linear-gradient(180deg, rgba(255, 255, 255, 0.0001) 0%, #FFFFFF 93.29%);
-        // }
+        min-height: 900px;
+        height: 100vh;
+        &:after {
+            content: '';
+            display: flex;
+            position: absolute;
+            width: 100vw;
+            height: 100%;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.0001) 0%, #FFFFFF 93.29%);
+        }
     }
 }
