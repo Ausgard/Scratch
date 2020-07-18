@@ -1,0 +1,3 @@
+- IE 11
+- SCSS
+- Webpack 4
