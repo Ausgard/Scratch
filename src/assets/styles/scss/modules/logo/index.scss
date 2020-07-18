@@ -1,10 +1,15 @@
 .logo {
-    @include flexGrid($f-direction, space-between, $a-items, $f-wrap);
+    @include fontOptions(20, 20, $phoneWidth, $desktopWidth, $mainFont_b, $fontWeight, 20, 0.02em, $textDecoration, lowercase, rgba(#363837, 1));
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     @include centeredElem (absolute);
+    background-image: url("/src/assets/img/icon-logo.svg");
+    background-repeat: no-repeat;
+    background-size: 18px 26px;
+    background-position: 0 1px;
     width: 98px;
-    height: 25.81px;
-    top: 374px;
-    left: 50%;
+    height: 30px;
 }
 
 .logo--login {
@@ -14,19 +19,6 @@
     margin: 0 auto 0 6.6%;
 }
 
-.logo__link {
-    width: 18px;
-    height: 26px;
-    svg {
-        width: inherit;
-        height: inherit;
-    }
-}
-
-.logo__text {
-    @include fontOptions(20, 20, $phoneWidth, $desktopWidth, $mainFont_b, $fontWeight, 20, 0.02em, $textDecoration, lowercase, rgba(#363837, 1));
-    margin: 4% 0 0 0;
-}
 
 @media screen and (min-width: $tabletWidth + px) and (max-width: $tabletBreakPoint + px) {
     .logo {
@@ -47,7 +39,7 @@
     }
     .logo--login {
         z-index: 2;
-        top: 433px;
+        top: 434px;
         left: 50%;
         transform: translate(-325%,-50%);
         margin: 0;
