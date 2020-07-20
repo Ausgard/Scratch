@@ -3,7 +3,7 @@ let swiper = new Swiper('.swiper-container', {
     slidesPerView: 'auto',
     loop: true,
     effect: 'slide',
-    spaceBetween: 10,
+    spaceBetween: 20,
     centeredSlides: true,
-    centeredSlidesBounds: true
+    centeredSlidesBounds: true,
   });

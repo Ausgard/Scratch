@@ -1,0 +1,34 @@
+.followers-data {
+    @include fontOptions (14, 14, $phoneWidth, $tabletWidth, $mainFont, $fontWeight, 22, $letterSpacing, $textDecoration, $textTransform, $fontColor);
+    @include flexGrid($f-direction, $j-content, center, $f-wrap);
+}
+
+.followers-data__followers {
+    margin: 0 0 0 0;
+}
+
+.followers-data__comments {
+    margin: 0 0 0 0;
+    span {
+        margin: 0 4px 0 0;   
+    }
+}
+
+.followers-data__separator {
+    border-radius: 50%;
+    width: 4px;
+    height: 4px;
+    background-color: #979797;
+    margin: 0 10px 0 11px;
+}
+
+.followers-data__likes {
+    margin: 0 0 0 0;
+    span {
+        margin: 0 4px 0 0;   
+    }
+}
+
+.followers-data--recipe {
+   margin: 22px 0 2px 0;
+}

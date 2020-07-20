@@ -18,14 +18,119 @@
         <a class="message message--header" href="#"><svg><use xlink:href="assets/img/sprite.svg#icon-message"></use></svg></a>
         <a class="avatar avatar--header" href="#"><img src="./assets/img/avatar.jpg" alt="avatar"></a>
     </header>
-    <!-- <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-            <div class="swiper-slide">Slide 4</div>
-            <div class="swiper-slide">Slide 5</div>
-        </div>
-    </div> -->
+    <main class="content">
+        <section class="content__user">
+            <div class="user-card">
+                <div class="user-card__info">
+                    <a class="avatar" href="#"><img src="./assets/img/avatar.jpg" alt="avatar"></a>
+                    <div class="user-card__info-data">
+                        <p class="user-card__name">Nick</p>
+                        <p class="user-card__surname">Evans</p>
+                        <p class="user-card__skill">Potato Master</p>
+                        <div class="followers-data">
+                            <p class="followers-data__followers"><span>584</span>followers</p>
+                            <span class="followers-data__separator">.</span>
+                            <p class="followers-data__likes"><span>23k</span>likes</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="user-card__account-info">
+                    <div class="user-card__recipes">
+                        <span class="user-card__r-count">20</span>
+                        <p class="user-card__r-text">Recipes</p>
+                    </div>
+                    <div class="user-card__saved">
+                        <span class="user-card__s-count">75</span>
+                        <p class="user-card__s-text">Ssaved</p>
+                    </div>
+                    <div class="user-card__following">
+                        <span class="user-card__f-count">248</span>
+                        <p class="user-card__f-text">Following</p>
+                    </div>
+                </div>
+                <button class="accentBtn user-card__subscribe">Follow</button>
+            </div>
+        </section>
+        <section class="content__main">
+            <div class="content__online-users">
+                <span class="content__online-count">286</span>
+                <p class="content__online-text">of your followers are online</p>
+                <button class="accentBtn content__create">Create recipe</button>
+            </div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide content__recipe-card">
+                        <img class="content__recipe-img" src="./assets/img/bg_red-wine.jpg" alt="Вкусняха с картинки">
+                        <div class="content__recipe-user">
+                            <a class="avatar avatar--recipe-user" href="#"><img src="./assets/img/avatar.jpg" alt="avatar"></a>
+                            <div class="content__recipe-user-info">
+                                <p class="content__recipe-name">Profile</p>
+                                <p class="content__recipe-surname">Name</p>
+                            </div>
+                            <p class="content__recipe-pub-time">2h ago</p>
+                        </div>
+                        <div class="content__recipe-text-block">
+                            <h2 class="content__recipe-headline">Red Wine and Mint Soufflé</h2>
+                            <button class="content__recipe-like"><svg><use xlink:href="assets/img/sprite.svg#icon-like"></use></svg></button>
+                            <p class="content__recipe-text">Apparently we had reached a great height in the atmosphere, for the sky was</p>
+                            <div class="followers-data followers-data--recipe">
+                                <p class="followers-data__likes"><span>32</span>likes</p>
+                                <span class="followers-data__separator"></span>
+                                <p class="followers-data__comments"><span>8</span>Comments</p>
+                            </div>
+                            <button class="content__recipe-save"><svg><use xlink:href="assets/img/sprite.svg#icon-recipe-save"></use></svg>Save</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide content__recipe-card">
+                        <img class="content__recipe-img" src="./assets/img/bg_red-wine.jpg" alt="Вкусняха с картинки">
+                        <div class="content__recipe-user">
+                            <a class="avatar avatar--recipe-user" href="#"><img src="./assets/img/avatar.jpg" alt="avatar"></a>
+                            <div class="content__recipe-user-info">
+                                <p class="content__recipe-name">Profile</p>
+                                <p class="content__recipe-surname">Name</p>
+                            </div>
+                            <p class="content__recipe-pub-time">2h ago</p>
+                        </div>
+                        <div class="content__recipe-text-block">
+                            <h2 class="content__recipe-headline">Red Wine and Mint Soufflé</h2>
+                            <button class="content__recipe-like"><svg><use xlink:href="assets/img/sprite.svg#icon-like"></use></svg></button>
+                            <p class="content__recipe-text">Apparently we had reached a great height in the atmosphere, for the sky was</p>
+                            <div class="followers-data followers-data--recipe">
+                                <p class="followers-data__likes"><span>32</span>likes</p>
+                                <span class="followers-data__separator"></span>
+                                <p class="followers-data__comments"><span>8</span>Comments</p>
+                            </div>
+                            <button class="content__recipe-save"><svg><use xlink:href="assets/img/sprite.svg#icon-recipe-save"></use></svg>Save</button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide content__recipe-card">
+                        <img class="content__recipe-img" src="./assets/img/bg_red-wine.jpg" alt="Вкусняха с картинки">
+                        <div class="content__recipe-user">
+                            <a class="avatar avatar--recipe-user" href="#"><img src="./assets/img/avatar.jpg" alt="avatar"></a>
+                            <div class="content__recipe-user-info">
+                                <p class="content__recipe-name">Profile</p>
+                                <p class="content__recipe-surname">Name</p>
+                            </div>
+                            <p class="content__recipe-pub-time">2h ago</p>
+                        </div>
+                        <div class="content__recipe-text-block">
+                            <h2 class="content__recipe-headline">Red Wine and Mint Soufflé</h2>
+                            <button class="content__recipe-like"><svg><use xlink:href="assets/img/sprite.svg#icon-like"></use></svg></button>
+                            <p class="content__recipe-text">Apparently we had reached a great height in the atmosphere, for the sky was</p>
+                            <div class="followers-data followers-data--recipe">
+                                <p class="followers-data__likes"><span>32</span>likes</p>
+                                <span class="followers-data__separator"></span>
+                                <p class="followers-data__comments"><span>8</span>Comments</p>
+                            </div>
+                            <button class="content__recipe-save"><svg><use xlink:href="assets/img/sprite.svg#icon-recipe-save"></use></svg>Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content__activity">
+        </section>
+    </main>
+
 </body>
 </html>
