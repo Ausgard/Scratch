@@ -1,0 +1,24 @@
+.message {
+    width: 24px;
+    height: 24px;
+    svg {
+        height: inherit;
+        width: inherit;
+    }
+}
+
+.message--header {
+    margin: 0 3.3% 0 0;
+}
+
+@media screen and (min-width: $tabletWidth + px) and (max-width: $tabletBreakPoint + px) {
+    .message--header {
+        order: 4;
+    }
+}
+
+@media screen and (min-width: $desktopWidth + px) {
+    .message--header {
+        margin: 1px 1.75% 0 0;
+    }
+}

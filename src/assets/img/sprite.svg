@@ -1,3 +1,16 @@
 <svg style="display: none" xmlns="http://www.w3.org/2000/svg">
-
+    <symbol id="icon-notifications" width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M6 17H18V13C18 9.68629 15.3137 7 12 7C8.68629 7 6 9.68629 6 13V17Z" stroke="#363837"/>
+        <rect x="11" y="5" width="2" height="1" stroke="#363837" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M7 19H17" stroke="#363837" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="icon-message" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5 7.5L12 12.5" stroke="#363837" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M19 7.5L12 12.5" stroke="#363837" stroke-linecap="round" stroke-linejoin="round"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M5 7H19V17H5V7Z" stroke="#363837" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <svg id="icon-search" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path opacity="0.4" fill-rule="evenodd" clip-rule="evenodd" d="M11 17C14.3137 17 17 14.3137 17 11C17 7.68629 14.3137 5 11 5C7.68629 5 5 7.68629 5 11C5 14.3137 7.68629 17 11 17Z" stroke="#363837"/>
+        <path opacity="0.4" d="M15.5 15.5L18.6866 18.6866" stroke="#363837" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
 </svg>

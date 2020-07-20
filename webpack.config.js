@@ -41,8 +41,8 @@ module.exports = {
 
         new CopyWebpackPlugin({
             patterns: [
-                {from: path.resolve(__dirname, 'src/assets/img'), to: path.resolve(__dirname, 'dist/assets/img')}
-                // {from: path.resolve(__dirname, 'src/assets/fonts/'), to: path.resolve(__dirname, 'dist/assets/fonts/')}
+                {from: path.resolve(__dirname, 'src/assets/img'), to: path.resolve(__dirname, 'dist/assets/img')},
+                {from: path.resolve(__dirname, 'src/assets/fonts/'), to: path.resolve(__dirname, 'dist/assets/fonts/')}
             ]
         }),
         new webpack.SourceMapDevToolPlugin()

@@ -1,0 +1,86 @@
+.header {
+    @include flexGrid($f-direction, flex-end, center, $f-wrap);
+    width: 100%;
+    height: 28px;
+    margin: 62px 0 0 0;
+}
+
+.header__search {
+    display: none;
+    label {
+        width: 24px;
+        height: 24px;
+        svg {
+            width: inherit;
+            height: inherit;
+        }
+    }
+}
+
+.header__notifications {
+    width: 24px;
+    height: 24px;
+    margin: 0 7% 0 0;
+   svg {
+       width: inherit;
+       height: inherit;
+   }
+}
+
+@media screen and (min-width: $tabletWidth + px) and (max-width: $tabletBreakPoint + px) {
+    .header {
+        // min-width: $tabletWidth + px;
+        // max-width: $tabletBreakPoint + px;
+        height: 79px;
+        position: relative;
+        border-bottom: solid 1px #e6e6e6;
+        margin: 24px 0 0 0;
+    }
+
+    .header__notifications {
+        order: 3;
+        margin: 0 3.3% 0 0;
+    }
+
+    .header__search {
+        display: flex;
+        order: 1;
+        margin: 0 73% 0 3.2%;
+    }
+
+    input[type="search"] {
+        display: none;
+    }
+}
+
+@media screen and (min-width: $desktopWidth + px) {
+    .header {
+        height: 80px;
+        margin: 0 0 0 0;
+    }
+
+    .header__search {
+        display: flex;
+        width: 40.348%;
+        height: 30px;
+        border-bottom: solid 1px $bgGray04;
+        margin: 10px 14.9% 0 0;
+        padding: 0 0 1px 0;
+
+        input[type="search"] {
+            display: flex;
+            @include fontOptions (14, 14, $desktopWidth, 2500, $mainFont, $fontWeight, 22, $letterSpacing, $textDecoration, $textTransform, $bgGray04);
+            width: 90%;
+            border: none;
+            padding: 0 0 5px 9px;
+        }
+
+        label {
+            margin: 0 0 0 9px;
+        }
+    }    
+
+    .header__notifications {
+        margin: 1px 1.75% 0 0;
+    }
+}

@@ -3,31 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sign up</title>
+    <title>Feed</title>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </head>
-<body class="background background--login">
-        <a class="logo logo--login" href="index.html">Scratch</a>
-    <section class="login-block">
-        <h1 class="login-block__headline login-block__headline--sign-up">Start from Scratch</h1>
-        <form class="login-block__form login-block__form--sign-up" action="#">
-            <p class="login-block__description">Create account to continue.</p>
-            <div class="login-block__name">
-                <label for="name">Full name</label>
-                <input type="text" name="name" id="name" required>
-            </div>
-            <div class="login-block__email login-block__email--sign-up">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="log-email" required>
-            </div>
-            <div class="login-block__password login-block__password--sign-up">
-                <label for="password">Password</label>
-                <button class="login-block__password-forget login-block__password-forget--sign-up">Forgot password?</button>
-                <input type="password" name="password" id="log-password" required>
-            </div>
-            <button class="accentBtn login-block__submit login-block__submit--sign-up">Create Account</button>
-            <p class="login-block__text login-block__text--sign-up">Already have an account?</p>
-            <a class="login-block__new" href="/src/login.html">Login Here</a>
-        </form>
-    </section>
+<body>
+    <header class="header">
+        <a class="logo logo--feed" href="index.html">Scratch</a>
+        <div class="header__search">
+            <label for="header-search"><svg><use xlink:href="assets/img/sprite.svg#icon-search"></use></svg></label>
+            <input type="search" name="header-search" id="header-search" placeholder="Search Recipe, Profile, or Ingredients">
+        </div>
+        <a class="header__notifications" href="#"><svg><use xlink:href="assets/img/sprite.svg#icon-notifications"></use></svg></a>
+        <a class="message message--header" href="#"><svg><use xlink:href="assets/img/sprite.svg#icon-message"></use></svg></a>
+        <a class="avatar avatar--header" href="#"><img src="./assets/img/avatar.jpg" alt="avatar"></a>
+    </header>
+    <!-- <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+        </div>
+    </div> -->
 </body>
 </html>
