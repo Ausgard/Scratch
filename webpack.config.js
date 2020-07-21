@@ -29,9 +29,12 @@ module.exports = {
         new HTMLWebpackPlugin({
             template: 'index.html'
         }),
-        // new HtmlWebpackInlineSVGPlugin({
-        //     runPreEmit: true
-        // }),
+
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery',
+            
+          }),
 
         new CleanWebpackPlugin(),
 
@@ -46,6 +49,9 @@ module.exports = {
             ]
         }),
         new webpack.SourceMapDevToolPlugin()
+                // new HtmlWebpackInlineSVGPlugin({
+        //     runPreEmit: true
+        // }),
     ],
     module: {
         rules: [

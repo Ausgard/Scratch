@@ -8,8 +8,11 @@
 }
 
 .content__main {
-    display: flex;
     width: 100%;
+}
+
+.content__carousel {
+    outline: none;
 }
 
 .content__recipe-card {
@@ -19,6 +22,10 @@
     min-height: 556px;
     opacity: 0.5;
     background-color: #ffffff;
+    margin: 0 10px;
+    &.is-selected {
+        opacity: 1;
+    }
 }
 
 .content__recipe-user {
@@ -87,10 +94,6 @@
 
 }
 
-
-
-
-
 .content__recipe-name,
 .content__recipe-surname {
     @include fontOptions (12, 12, $phoneWidth, $tabletWidth, $mainFont, $fontWeight, 15, $letterSpacing, $textDecoration, $textTransform, $mainBlack);
@@ -126,4 +129,3 @@
 .content__activity {
     display: none;
 }
-

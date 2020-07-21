@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feed</title>
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
 </head>
 <body>
     <header class="header">
@@ -57,73 +56,71 @@
                 <p class="content__online-text">of your followers are online</p>
                 <button class="accentBtn content__create">Create recipe</button>
             </div>
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide content__recipe-card">
-                        <img class="content__recipe-img" src="./assets/img/bg_red-wine.jpg" alt="Вкусняха с картинки">
-                        <div class="content__recipe-user">
-                            <a class="avatar avatar--recipe-user" href="#"><img src="./assets/img/avatar.jpg" alt="avatar"></a>
-                            <div class="content__recipe-user-info">
-                                <p class="content__recipe-name">Profile</p>
-                                <p class="content__recipe-surname">Name</p>
-                            </div>
-                            <p class="content__recipe-pub-time">2h ago</p>
+            <div class="content__carousel">
+                <div class="content__recipe-card">
+                    <img class="content__recipe-img" src="./assets/img/bg_red-wine.jpg" alt="Вкусняха с картинки">
+                    <div class="content__recipe-user">
+                        <a class="avatar avatar--recipe-user" href="#"><img src="./assets/img/avatar.jpg" alt="avatar"></a>
+                        <div class="content__recipe-user-info">
+                            <p class="content__recipe-name">Profile</p>
+                            <p class="content__recipe-surname">Name</p>
                         </div>
-                        <div class="content__recipe-text-block">
-                            <h2 class="content__recipe-headline">Red Wine and Mint Soufflé</h2>
-                            <button class="content__recipe-like"><svg><use xlink:href="assets/img/sprite.svg#icon-like"></use></svg></button>
-                            <p class="content__recipe-text">Apparently we had reached a great height in the atmosphere, for the sky was</p>
-                            <div class="followers-data followers-data--recipe">
-                                <p class="followers-data__likes"><span>32</span>likes</p>
-                                <span class="followers-data__separator"></span>
-                                <p class="followers-data__comments"><span>8</span>Comments</p>
-                            </div>
-                            <button class="content__recipe-save"><svg><use xlink:href="assets/img/sprite.svg#icon-recipe-save"></use></svg>Save</button>
-                        </div>
+                        <p class="content__recipe-pub-time">2h ago</p>
                     </div>
-                    <div class="swiper-slide content__recipe-card">
-                        <img class="content__recipe-img" src="./assets/img/bg_red-wine.jpg" alt="Вкусняха с картинки">
-                        <div class="content__recipe-user">
-                            <a class="avatar avatar--recipe-user" href="#"><img src="./assets/img/avatar.jpg" alt="avatar"></a>
-                            <div class="content__recipe-user-info">
-                                <p class="content__recipe-name">Profile</p>
-                                <p class="content__recipe-surname">Name</p>
-                            </div>
-                            <p class="content__recipe-pub-time">2h ago</p>
+                    <div class="content__recipe-text-block">
+                        <h2 class="content__recipe-headline">Red Wine and Mint Soufflé</h2>
+                        <button class="content__recipe-like"><svg><use xlink:href="assets/img/sprite.svg#icon-like"></use></svg></button>
+                        <p class="content__recipe-text">Apparently we had reached a great height in the atmosphere, for the sky was</p>
+                        <div class="followers-data followers-data--recipe">
+                            <p class="followers-data__likes"><span>32</span>likes</p>
+                            <span class="followers-data__separator"></span>
+                            <p class="followers-data__comments"><span>8</span>Comments</p>
                         </div>
-                        <div class="content__recipe-text-block">
-                            <h2 class="content__recipe-headline">Red Wine and Mint Soufflé</h2>
-                            <button class="content__recipe-like"><svg><use xlink:href="assets/img/sprite.svg#icon-like"></use></svg></button>
-                            <p class="content__recipe-text">Apparently we had reached a great height in the atmosphere, for the sky was</p>
-                            <div class="followers-data followers-data--recipe">
-                                <p class="followers-data__likes"><span>32</span>likes</p>
-                                <span class="followers-data__separator"></span>
-                                <p class="followers-data__comments"><span>8</span>Comments</p>
-                            </div>
-                            <button class="content__recipe-save"><svg><use xlink:href="assets/img/sprite.svg#icon-recipe-save"></use></svg>Save</button>
-                        </div>
+                        <button class="content__recipe-save"><svg><use xlink:href="assets/img/sprite.svg#icon-recipe-save"></use></svg>Save</button>
                     </div>
-                    <div class="swiper-slide content__recipe-card">
-                        <img class="content__recipe-img" src="./assets/img/bg_red-wine.jpg" alt="Вкусняха с картинки">
-                        <div class="content__recipe-user">
-                            <a class="avatar avatar--recipe-user" href="#"><img src="./assets/img/avatar.jpg" alt="avatar"></a>
-                            <div class="content__recipe-user-info">
-                                <p class="content__recipe-name">Profile</p>
-                                <p class="content__recipe-surname">Name</p>
-                            </div>
-                            <p class="content__recipe-pub-time">2h ago</p>
+                </div>
+                <div class="content__recipe-card">
+                    <img class="content__recipe-img" src="./assets/img/bg_red-wine.jpg" alt="Вкусняха с картинки">
+                    <div class="content__recipe-user">
+                        <a class="avatar avatar--recipe-user" href="#"><img src="./assets/img/avatar.jpg" alt="avatar"></a>
+                        <div class="content__recipe-user-info">
+                            <p class="content__recipe-name">Profile</p>
+                            <p class="content__recipe-surname">Name</p>
                         </div>
-                        <div class="content__recipe-text-block">
-                            <h2 class="content__recipe-headline">Red Wine and Mint Soufflé</h2>
-                            <button class="content__recipe-like"><svg><use xlink:href="assets/img/sprite.svg#icon-like"></use></svg></button>
-                            <p class="content__recipe-text">Apparently we had reached a great height in the atmosphere, for the sky was</p>
-                            <div class="followers-data followers-data--recipe">
-                                <p class="followers-data__likes"><span>32</span>likes</p>
-                                <span class="followers-data__separator"></span>
-                                <p class="followers-data__comments"><span>8</span>Comments</p>
-                            </div>
-                            <button class="content__recipe-save"><svg><use xlink:href="assets/img/sprite.svg#icon-recipe-save"></use></svg>Save</button>
+                        <p class="content__recipe-pub-time">2h ago</p>
+                    </div>
+                    <div class="content__recipe-text-block">
+                        <h2 class="content__recipe-headline">Red Wine and Mint Soufflé</h2>
+                        <button class="content__recipe-like"><svg><use xlink:href="assets/img/sprite.svg#icon-like"></use></svg></button>
+                        <p class="content__recipe-text">Apparently we had reached a great height in the atmosphere, for the sky was</p>
+                        <div class="followers-data followers-data--recipe">
+                            <p class="followers-data__likes"><span>32</span>likes</p>
+                            <span class="followers-data__separator"></span>
+                            <p class="followers-data__comments"><span>8</span>Comments</p>
                         </div>
+                        <button class="content__recipe-save"><svg><use xlink:href="assets/img/sprite.svg#icon-recipe-save"></use></svg>Save</button>
+                    </div>
+                </div>
+                <div class="content__recipe-card">
+                    <img class="content__recipe-img" src="./assets/img/bg_red-wine.jpg" alt="Вкусняха с картинки">
+                    <div class="content__recipe-user">
+                        <a class="avatar avatar--recipe-user" href="#"><img src="./assets/img/avatar.jpg" alt="avatar"></a>
+                        <div class="content__recipe-user-info">
+                            <p class="content__recipe-name">Profile</p>
+                            <p class="content__recipe-surname">Name</p>
+                        </div>
+                        <p class="content__recipe-pub-time">2h ago</p>
+                    </div>
+                    <div class="content__recipe-text-block">
+                        <h2 class="content__recipe-headline">Red Wine and Mint Soufflé</h2>
+                        <button class="content__recipe-like"><svg><use xlink:href="assets/img/sprite.svg#icon-like"></use></svg></button>
+                        <p class="content__recipe-text">Apparently we had reached a great height in the atmosphere, for the sky was</p>
+                        <div class="followers-data followers-data--recipe">
+                            <p class="followers-data__likes"><span>32</span>likes</p>
+                            <span class="followers-data__separator"></span>
+                            <p class="followers-data__comments"><span>8</span>Comments</p>
+                        </div>
+                        <button class="content__recipe-save"><svg><use xlink:href="assets/img/sprite.svg#icon-recipe-save"></use></svg>Save</button>
                     </div>
                 </div>
             </div>
@@ -131,6 +128,5 @@
         <section class="content__activity">
         </section>
     </main>
-
 </body>
 </html>
