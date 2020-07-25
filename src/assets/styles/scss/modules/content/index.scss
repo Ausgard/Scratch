@@ -13,6 +13,10 @@
 
 .content__carousel {
     outline: none;
+    height: auto;
+    max-height: 794px;
+    overflow: hidden;
+    margin: 0 0 54px 0;
 }
 
 .content__recipe-card {
@@ -52,7 +56,7 @@
 }
 
 .content__recipe-headline {
-    @include fontOptions (18, 18, $phoneWidth, $tabletWidth, $mainFont_sb, $fontWeight, 32, -0.005em, $textDecoration, $textTransform, $mainBlack);
+    @include fontOptions (18, 18, $phoneWidth, $tabletWidth, $mainFont_sb, $fontWeight, 32, -0.001em, $textDecoration, $textTransform, $mainBlack);
     margin: 16px 0 0 0;
 }
 
@@ -128,4 +132,86 @@
 
 .content__activity {
     display: none;
+}
+
+@media screen and (min-width: $tabletWidth + px) and (max-width: $tabletBreakPoint + px) {
+    .content__main {
+        @include flexGrid(column, flex-start, center, wrap);
+    }
+
+    .content__online-users {
+        @include flexGrid(row, space-between, center, wrap);
+        width: 93.490%;
+        height: 80px;
+        margin: 25px 0 30px 0;
+    }
+
+    .content__online-text {
+        @include fontOptions (14, 14, $tabletWidth, $desktopWidth, $mainFont, $fontWeight, 22, $letterSpacing, $textDecoration, $textTransform, $mainBlack);
+        margin: 0 0 0 3.5%;
+        span {
+            margin: 0 3px 0 0;
+        }
+    }
+
+    .content__create {
+        width: 128px;
+        height: 36px;
+        margin: 0 3.5% 0 0;
+    }
+
+    .content__carousel {
+        @include flexGrid(column, flex-start, center, wrap);
+        width: 100%;
+    }
+
+    .content__recipe-card {
+        @include flexGrid(column, flex-start, flex-start, wrap);
+        justify-items: flex-start;
+        width: 718px;
+        min-height: 240px;
+        height: 240px;
+        opacity: 1;
+        margin: 0 0 20px 0;
+    }
+
+    .content__recipe-img {
+        width: 240px;
+        height: 240px;
+        margin: 0 0 0 0;
+    }
+
+    .content__recipe-user {
+        position: relative;
+        top: 0;
+        width: 20%;
+    }
+
+    .content__recipe-user-info {
+        margin: 17px 0 0 10px;
+    }
+
+    .content__recipe-text-block {
+        width: 273px;
+        min-height: 163px;
+        padding: 0 0 0 0;
+        margin: 0 24.4% 0 0;
+    }
+
+    .content__recipe-headline {
+        margin: 1px 0 0 0;
+    }
+
+    .content__recipe-like {
+        margin: 3px 0 0 0;
+    }
+
+    .content__recipe-text {
+        margin: 0 0 0 0;
+    }
+
+    .followers-data--recipe {
+        margin: 0 0 0 0;
+    }
+
 }

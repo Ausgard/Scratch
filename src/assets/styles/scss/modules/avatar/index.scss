@@ -24,6 +24,10 @@
         display: flex;
         margin: 0 3.4% 0 0;
     }
+
+    .avatar--recipe-user {
+        margin: 15px 0;
+    }
 }
 
 @media screen and (min-width: $desktopWidth + px) {

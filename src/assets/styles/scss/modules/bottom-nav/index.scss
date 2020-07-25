@@ -1,0 +1,29 @@
+.bottom-nav {
+    @include flexGrid($f-direction, space-around, center, $f-wrap);
+    width: 100%;
+    height: 90px;
+}
+
+.bottom-nav__search,
+.bottom-nav__feed,
+.bottom-nav__cook {
+    width: 32px;
+    height: 32px;
+
+    svg {
+        width: inherit;
+        height: inherit;
+    }
+}
+
+.bottom-nav__search {
+
+}
+
+.bottom-nav__feed {
+
+}
+
+.bottom-nav__cook {
+
+}
