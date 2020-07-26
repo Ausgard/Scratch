@@ -1,5 +1,4 @@
 .content {
-    // background-color: #F2F2F2; 768
     background-color: #ffffff;
 }
 
@@ -226,4 +225,23 @@
         margin: 0 0 0 0;
     }
 
+}
+
+@media screen and (min-width: $desktopWidth + px) {
+    .content {
+        @include flexGrid(row, flex-start, flex-start, wrap);
+        background-color: #F2F2F2;
+    }
+
+    .content__user {
+        @include flexGrid(row, flex-start, flex-start, wrap);
+    }
+
+    .user-card {
+        width: 304px;
+    }
+
+    .content__activity {
+        @include flexGrid(row, flex-start, flex-start, wrap);
+    }
 }
