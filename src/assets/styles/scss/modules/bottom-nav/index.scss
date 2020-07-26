@@ -17,13 +17,23 @@
 }
 
 .bottom-nav__search {
-
+    margin: 0 0 0 4px;
 }
 
-.bottom-nav__feed {
+// .bottom-nav__feed {
 
-}
+// }
 
 .bottom-nav__cook {
+    margin: 0 4px 0 0;
+}
 
+@media screen and (min-width: $tabletWidth + px) and (max-width: $tabletBreakPoint + px) {
+    .bottom-nav__search {
+        margin: 0 0 0 26%;
+    }
+
+    .bottom-nav__cook {
+        margin: 0 26.5% 0 0;
+    }
 }

@@ -12,4 +12,4 @@ if (matchMedia('screen and (min-width: 768px)').matches) {
   optionsFeed.watchCSS = true
 }
 
-let feedMaincarousel = new Flickity('.content__carousel', optionsFeed);
+let feedMaincarousel = new Flickity('.content__wrapper', optionsFeed);

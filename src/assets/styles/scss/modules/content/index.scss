@@ -12,11 +12,14 @@
 }
 
 .content__carousel {
-    outline: none;
     height: auto;
     max-height: 794px;
     overflow: hidden;
     margin: 0 0 54px 0;
+}
+
+.content__wrapper {
+    outline: none;
 }
 
 .content__recipe-card {
@@ -82,14 +85,13 @@
     @include flexGrid(row, space-between, center, nowrap);
     @include fontOptions (14, 14, $phoneWidth, $tabletWidth, $mainFont, $fontWeight, 18, -0.005em, $textDecoration, $textTransform, $mainGreen);
     align-self: flex-end;
-    min-width: 73px;
-    max-width: 85px;
-    width: 20%;
+    max-width: 73px;
+    width: 27.55%;
     height: 26px;
     background-color: transparent;
     border: solid 1px $mainGreen;
     border-radius: 4px;
-    padding: 0 10px 0 9px;
+    padding: 0 4% 0 3.5%;
     margin: 0 0 0 0;
     svg {
         width: 14px;
@@ -143,7 +145,7 @@
         @include flexGrid(row, space-between, center, wrap);
         width: 93.490%;
         height: 80px;
-        margin: 25px 0 30px 0;
+        margin: 25px 0 21px 0;
     }
 
     .content__online-text {
@@ -163,22 +165,30 @@
     .content__carousel {
         @include flexGrid(column, flex-start, center, wrap);
         width: 100%;
+        height: 704px;
+        margin: 0 0 0 0;
+    }
+
+    .content__wrapper {
+        height: 100%;
+        overflow-y: scroll;
+        margin: 0 0 0 0;
     }
 
     .content__recipe-card {
         @include flexGrid(column, flex-start, flex-start, wrap);
-        justify-items: flex-start;
+        align-content: flex-start;
         width: 718px;
         min-height: 240px;
         height: 240px;
         opacity: 1;
-        margin: 0 0 20px 0;
+        margin: 0 0 29px 0;
     }
 
     .content__recipe-img {
         width: 240px;
         height: 240px;
-        margin: 0 0 0 0;
+        margin: 0 15px 0 0;
     }
 
     .content__recipe-user {
@@ -192,10 +202,10 @@
     }
 
     .content__recipe-text-block {
-        width: 273px;
+        width: 38.023%;
         min-height: 163px;
         padding: 0 0 0 0;
-        margin: 0 24.4% 0 0;
+        margin: 0 0 0 0;
     }
 
     .content__recipe-headline {
@@ -207,10 +217,12 @@
     }
 
     .content__recipe-text {
+        letter-spacing: -0.0005em;
+        line-height: 157%;
         margin: 0 0 0 0;
     }
 
-    .followers-data--recipe {
+    .content__recipe-save {
         margin: 0 0 0 0;
     }
 
