@@ -8,6 +8,7 @@
 
 .content__main {
     width: 100%;
+    background-color: #ffffff;
 }
 
 .content__carousel {
@@ -29,6 +30,7 @@
     opacity: 0.5;
     background-color: #ffffff;
     margin: 0 10px;
+    padding: 37px 0 0 0;
     &.is-selected {
         opacity: 1;
     }
@@ -117,10 +119,15 @@
     margin: 2px 0 0 10px;
 }
 
-.content__recipe-img {
+.content__recipe-link {
     width: 100%;
     height: 71.224%;
-    margin: 37px 0 0 0;
+}
+
+.content__recipe-img {
+    width: inherit;
+    height: inherit;
+    // margin: 37px 0 0 0;
 }
 
 .swiper-slide-active {
@@ -128,7 +135,27 @@
 }
 
 .content__online-users {
+    @include flexGrid(row, space-between, center, wrap);
     display: none;
+    width: 93.490%;
+    height: 80px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    margin: 25px 0 21px 0;
+}
+
+.content__online-text {
+    @include fontOptions (14, 14, $tabletWidth, $desktopWidth, $mainFont, $fontWeight, 22, $letterSpacing, $textDecoration, $textTransform, $mainBlack);
+    margin: 0 0 0 3.5%;
+    span {
+        margin: 0 3px 0 0;
+    }
+}
+
+.content__create {
+    width: 128px;
+    height: 36px;
+    margin: 0 3.5% 0 0;
 }
 
 .content__activity {
@@ -141,29 +168,11 @@
     }
 
     .content__online-users {
-        @include flexGrid(row, space-between, center, wrap);
-        width: 93.490%;
-        height: 80px;
-        margin: 25px 0 21px 0;
-    }
-
-    .content__online-text {
-        @include fontOptions (14, 14, $tabletWidth, $desktopWidth, $mainFont, $fontWeight, 22, $letterSpacing, $textDecoration, $textTransform, $mainBlack);
-        margin: 0 0 0 3.5%;
-        span {
-            margin: 0 3px 0 0;
-        }
-    }
-
-    .content__create {
-        width: 128px;
-        height: 36px;
-        margin: 0 3.5% 0 0;
+        display: flex;
     }
 
     .content__carousel {
         @include flexGrid(column, flex-start, center, wrap);
-        width: 100%;
         height: 704px;
         margin: 0 0 0 0;
     }
@@ -181,19 +190,25 @@
         min-height: 240px;
         height: 240px;
         opacity: 1;
+        padding: 0;
         margin: 0 0 29px 0;
     }
 
-    .content__recipe-img {
+    .content__recipe-link {
         width: 240px;
         height: 240px;
-        margin: 0 15px 0 0;
+        margin: 10px 15px 0 0;
     }
+
+    // .content__recipe-img {
+
+    // }
 
     .content__recipe-user {
         position: relative;
         top: 0;
         width: 20%;
+        margin: 9px 0 0 0;
     }
 
     .content__recipe-user-info {
@@ -228,13 +243,75 @@
 }
 
 @media screen and (min-width: $desktopWidth + px) {
+
     .content {
         @include flexGrid(row, flex-start, flex-start, wrap);
         background-color: #F2F2F2;
     }
 
+    .content__main {
+        @include flexGrid(column, flex-start, center, wrap);
+        width: 631px;
+        background-color: transparent;
+        margin: 25px 20px 0 20px;
+    }
+
+    .content__online-users {
+        display: flex;
+        width: 631px;
+    }
+
+    .content__carousel {
+        width: inherit;
+        max-height: 1558px;
+        overflow-y: scroll;
+        border-radius: 8px 8px 0 0;
+        background-color: #ffffff;
+        margin: 0 0 0 0;
+    }
+
+    .content__wrapper {
+        @include flexGrid(column, flex-start, center, wrap);
+        height: inherit;
+        padding: 0 0 0 0;
+    }
+
+    .content__recipe-card {
+        @include flexGrid(column, flex-start, center, wrap);
+        width: 581px;
+        min-height: 383px;
+        opacity: 1;
+        padding: 0 0 0 0;
+        margin: 0 0 35px 0;
+    }
+
+    .content__recipe-link {
+        width: inherit;
+        height: 238px;
+        overflow: hidden;
+    }
+
+    .content__recipe-img {
+        width: inherit;
+        height: inherit;
+        margin: 0 0 0 0;
+    }
+
+    .content__recipe-user {
+        top: 0;
+    }
+
+    .content__recipe-text-block {
+        padding: 0px;
+    }
+
+    .content__recipe-save {
+        padding: 0 12px;
+    }
+
     .content__user {
         @include flexGrid(row, flex-start, flex-start, wrap);
+        margin: 50px 0 0 5.55%;
     }
 
     .user-card {

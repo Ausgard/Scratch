@@ -15,3 +15,9 @@
         height: inherit;
     }
 }
+
+@media screen and (min-width: $desktopWidth + px) {
+    .bottom-nav {
+        display: none;
+    }
+}

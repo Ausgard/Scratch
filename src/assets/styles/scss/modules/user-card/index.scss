@@ -1,0 +1,67 @@
+.user-card {
+    @include flexGrid(column, flex-start, center, $f-wrap);
+    border-radius: 8px;
+    // padding: 20px 0 0 0;
+    background-color: #ffffff;
+}
+
+.user-card__info {
+    @include flexGrid(row, flex-start, flex-start, $f-wrap);
+    padding: 0 0 18px 0;
+}
+
+.user-card__info-data {
+    @include flexGrid(row, flex-start, flex-start, wrap);
+    align-content: flex-start;
+    width: 167px;
+    margin: 28px 0 0 0;
+}
+
+.user-card__account-info {
+    @include flexGrid(row, space-between, center, $f-wrap);
+    width: 254px;
+    border-top: solid 1px #e5e5e5e5;
+    padding: 21px 0 25px 0;
+}
+
+.user-card__recipes,
+.user-card__saved,
+.user-card__following {
+    @include flexGrid(column, flex-start, center, $f-wrap);
+}
+
+.user-card__name {
+    margin: 0 6px 0 0;
+}
+
+.user-card__surname {
+    margin: 0 0 0 0;
+}
+
+.user-card__name,
+.user-card__surname {
+    @include fontOptions (16, 16, $tabletWidth, $desktopWidth, $mainFont_b, $fontWeight, 16, $letterSpacing, $textDecoration, $textTransform, $mainBlack);
+}
+
+.user-card__skill {
+    @include fontOptions (14, 14, $tabletWidth, $desktopWidth, $mainFont, $fontWeight, 22, $letterSpacing, $textDecoration, $textTransform, $fontColor);
+    margin: 4px 0 7px 0;
+}
+
+.user-card__r-count,
+.user-card__s-count,
+.user-card__f-count {
+    @include fontOptions (20, 20, $tabletWidth, $desktopWidth, $mainFont_b, $fontWeight, 16, $letterSpacing, $textDecoration, $textTransform, $mainBlack);
+}
+
+.user-card__r-text,
+.user-card__s-text,
+.user-card__f-text {
+    @include fontOptions (16, 16, $tabletWidth, $desktopWidth, $mainFont, $fontWeight, 32, $letterSpacing, $textDecoration, $textTransform, $fontColor);
+    display: flex;
+    margin: 5px 0 0 0;
+}
+
+.user-card__subscribe {
+    display: none;
+}
