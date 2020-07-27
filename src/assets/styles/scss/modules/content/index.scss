@@ -267,7 +267,14 @@
         overflow-y: scroll;
         border-radius: 8px 8px 0 0;
         background-color: #ffffff;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        padding: 24px 0 0 0;
         margin: 0 0 0 0;
+        
+        &::-webkit-scrollbar {
+            display: none;
+        }
     }
 
     .content__wrapper {
@@ -299,6 +306,9 @@
 
     .content__recipe-user {
         top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
     }
 
     .content__recipe-text-block {
@@ -310,7 +320,7 @@
     }
 
     .content__user {
-        @include flexGrid(row, flex-start, flex-start, wrap);
+        @include flexGrid(column, flex-start, flex-start, wrap);
         margin: 50px 0 0 5.55%;
     }
 
