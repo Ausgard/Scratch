@@ -329,6 +329,30 @@
     }
 
     .content__activity {
-        @include flexGrid(row, flex-start, flex-start, wrap);
+        @include flexGrid(column, flex-start, flex-start, wrap);
+        background-color: #ffffff;
+        border-radius: 8px;
+        margin: 50px 0 0 0;
+    }
+
+    .content__activity-live {
+        @include flexGrid(column, flex-start, flex-start, wrap);
+        width: 305px;
+    }
+
+    .content__activity-headline {
+        @include fontOptions (16, 16, $tabletWidth, $desktopWidth, $mainFont_b, $fontWeight, 16, $letterSpacing, $textDecoration, $textTransform, $mainBlack);
+        margin: 28px 0 28px 25px;
+    }
+
+    .content__activity-video {
+        position: relative;
+        align-self: center;
+    }
+
+    .content__stream {
+        width: 255px;
+        height: 152px;
+        border-radius: 8px;
     }
 }
