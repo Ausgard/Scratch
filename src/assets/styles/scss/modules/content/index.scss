@@ -320,6 +320,21 @@
 
     .content__recipe-save {
         padding: 0 12px;
+        &:active {
+            color: #ffffff;
+            background-color: $mainGreen;
+
+        }
+
+        &:hover,
+        &:focus {
+            display: flex;
+            justify-content: center;
+            transition: 0.1s;
+            svg {
+                display: none;
+            }
+        }
     }
 
     .content__user {
