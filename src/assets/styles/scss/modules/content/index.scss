@@ -11,10 +11,19 @@
     background-color: #ffffff;
 }
 
+.content__carousel,
+.content__wrapper {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
 .content__carousel {
     height: auto;
     max-height: 794px;
-    overflow: hidden;
+    overflow-x: hidden;
     margin: 0 0 54px 0;
 }
 
@@ -127,7 +136,6 @@
 .content__recipe-img {
     width: inherit;
     height: inherit;
-    // margin: 37px 0 0 0;
 }
 
 .swiper-slide-active {
@@ -155,6 +163,7 @@
 .content__create {
     width: 128px;
     height: 36px;
+    padding: 0px;
     margin: 0 3.5% 0 0;
 }
 
@@ -200,10 +209,6 @@
         margin: 10px 15px 0 0;
     }
 
-    // .content__recipe-img {
-
-    // }
-
     .content__recipe-user {
         position: relative;
         top: 0;
@@ -245,7 +250,7 @@
 @media screen and (min-width: $desktopWidth + px) {
 
     .content {
-        @include flexGrid(row, flex-start, flex-start, wrap);
+        @include flexGrid(row, center, flex-start, wrap);
         background-color: #F2F2F2;
     }
 
@@ -254,6 +259,10 @@
         width: 631px;
         background-color: transparent;
         margin: 25px 20px 0 20px;
+    }
+
+    .content__create {
+        margin: 0 3.9% 0 0;
     }
 
     .content__online-users {
@@ -267,14 +276,8 @@
         overflow-y: scroll;
         border-radius: 8px 8px 0 0;
         background-color: #ffffff;
-        -ms-overflow-style: none;
-        scrollbar-width: none;
         padding: 24px 0 0 0;
-        margin: 0 0 0 0;
-        
-        &::-webkit-scrollbar {
-            display: none;
-        }
+        margin: 0 0 0 0;     
     }
 
     .content__wrapper {
@@ -320,8 +323,8 @@
     }
 
     .content__user {
-        @include flexGrid(column, flex-start, flex-start, wrap);
-        margin: 50px 0 0 5.55%;
+        @include flexGrid(column, flex-start, center, wrap);
+        margin: 50px 0 0 0;
     }
 
     .user-card {
@@ -330,14 +333,54 @@
 
     .content__activity {
         @include flexGrid(column, flex-start, flex-start, wrap);
-        background-color: #ffffff;
-        border-radius: 8px;
+        background-color: transparent;
         margin: 50px 0 0 0;
+    }
+
+    .content__activity-full,
+    .content__activity-small,
+    .content__activity-text {
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        right: 0;
+        bottom: 0;
+        padding: 0;
+        border: none;
+        background-color: transparent;
+        svg {
+            width: inherit;
+            height: inherit;
+        }
+    }
+    .content__activity-text {
+        @include fontOptions (10, 10, $tabletWidth, $desktopWidth, $mainFont, $fontWeight, 20, 0.05em, $textDecoration, uppercase, #ffffff);
+        width: 37.15px;
+        height: 20px;
+        text-align: center;
+        background-color: $sysRed;
+        border-radius: 4px;
+        left: 10px;
+        top: 8px;
+        margin: 0;
+    }
+
+    .content__activity-full {
+        left: 226px;
+        top: 4px;
+    }
+
+    .content__activity-small {
+        left: 196px;
+        top: 4px;    
     }
 
     .content__activity-live {
         @include flexGrid(column, flex-start, flex-start, wrap);
         width: 305px;
+        background-color: #ffffff;
+        border-radius: 8px;
+        padding: 0 0 17px 0;
     }
 
     .content__activity-headline {
@@ -354,5 +397,51 @@
         width: 255px;
         height: 152px;
         border-radius: 8px;
+    }
+
+    .content__activity-top {
+        @include flexGrid(row, space-between, flex-start, wrap);
+        align-content: flex-start;
+        width: 255px;
+        background-color: #ffffff;
+        border-radius: 8px;
+        padding: 0 25px 20px 25px;
+        margin: 20px 0 0 0;
+    }
+
+    .content__activity-headline--top {
+        width: 100%;
+        text-transform: capitalize;
+        margin: 23px 0 14px 0;
+    }
+
+    .content__activity-link {
+        width: 40px;
+        height: 40px;
+        img {
+            width: inherit;
+            height: inherit;
+            border-radius: 50%;
+        }
+    }
+
+    .content__activity-footer {
+        @include flexGrid(row, space-between, flex-start, wrap);
+        max-width: 255px;
+        background-color: #ffffff;
+        border-radius: 8px;
+        padding: 26px 25px 25px 25px;
+        margin: 20px 0 0 0;
+    }
+
+    .content__activity-footer-link,
+    .content__activity-footer-copyright {
+        @include fontOptions (12, 12, $tabletWidth, $desktopWidth, $mainFont, $fontWeight, 16, 0.05em, $textDecoration, $textTransform, $bgGray01);
+    }
+
+    .content__activity-footer-copyright {
+        font-size: 10px;
+        letter-spacing: 0em;
+        margin: 22px 0 0 0;
     }
 }
