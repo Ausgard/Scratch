@@ -16,6 +16,9 @@
     <symbol id="icon-like" width="24" height="24" viewBox="0 0 24 24" fill="none">
         <path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd" d="M12.001 19C12.001 19 5.45454 12.9471 4.31981 10.5011C3.18508 8.05507 5.25366 5 7.63914 5C10.0246 5 12.001 7.34142 12.001 7.34142C12.001 7.34142 14.1843 5 16.2927 5C18.401 5 20.9495 7.56199 19.6436 10.5011C18.3378 13.4402 12.001 19 12.001 19Z" stroke="#363837" stroke-linecap="square"/>
     </symbol>
+    <symbol id="icon-liked" width="24" height="24" viewBox="0 0 24 24" fill="#F84971">
+        <path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd" d="M12.001 19C12.001 19 5.45454 12.9471 4.31981 10.5011C3.18508 8.05507 5.25366 5 7.63914 5C10.0246 5 12.001 7.34142 12.001 7.34142C12.001 7.34142 14.1843 5 16.2927 5C18.401 5 20.9495 7.56199 19.6436 10.5011C18.3378 13.4402 12.001 19 12.001 19Z" stroke="#363837" stroke-linecap="square"/>
+    </symbol>
     <symbol id="icon-recipe-save" width="14" height="14" viewBox="0 0 14 14" fill="none">
         <path d="M7.00002 2.91669V11.0834" stroke="#30BE76" stroke-linecap="round" stroke-linejoin="round"/>
         <path d="M2.91663 6.99998H11.0833" stroke="#30BE76" stroke-linecap="round" stroke-linejoin="round"/>
