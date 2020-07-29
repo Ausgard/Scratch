@@ -1,12 +1,13 @@
 $(document).ready(function(){
     let likeBtn = $('.content__recipe-like')
     let likeBtnActive = $('.content__recipe-like')
-    likeBtn.on('click', setBtnValue)
 
-    function setBtnValue(event) { 
-        $(this).html('<svg><use xlink:href="assets/img/sprite.svg#icon-liked"></use></svg>')
+    likeBtn.on('click', changeIcon)
 
-        if($(event.target).html() === '<svg><use xlink:href="assets/img/sprite.svg#icon-liked"></use></svg>') {
+    function changeIcon(event) { 
+        if($(this).html() == '<svg><use xlink:href="assets/img/sprite.svg#icon-like"></use></svg>') {
+            $(this).html('<svg><use xlink:href="assets/img/sprite.svg#icon-liked"></use></svg>')
+        } else {
             $(this).html('<svg><use xlink:href="assets/img/sprite.svg#icon-like"></use></svg>')
         }
     }
