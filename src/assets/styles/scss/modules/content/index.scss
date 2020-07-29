@@ -101,6 +101,8 @@
     background-color: transparent;
     border: solid 1px $mainGreen;
     border-radius: 4px;
+    transition: 0.2s;
+    outline: none;
     padding: 0 9px 0 10px;
     margin: 0 0 0 0;
     svg {
@@ -116,7 +118,7 @@
     &:hover,
     &:focus {
         background-color: $mainGreen02;
-        transition: 0.1s;
+        transition: 0.2s;
     }
 
 }
@@ -176,6 +178,17 @@
     height: 36px;
     padding: 0px;
     margin: 0 3.5% 0 0;
+    &:hover,
+    &:focus {
+        outline: none;
+        transition: 0.3s;
+        color: $mainGreen;
+        background-color: #ffffff;
+    }
+    &:active {
+        background-color: $mainGreen;
+        color: #ffffff;
+    }
 }
 
 .content__activity {
@@ -429,10 +442,19 @@
     .content__activity-link {
         width: 40px;
         height: 40px;
+        border-radius: 50%;
+        border: solid 2px transparent;
         img {
             width: inherit;
             height: inherit;
             border-radius: 50%;
+        }
+        &:hover,
+        &:active,
+        &:focus {
+            outline: none;
+            transition: 0.3s;
+            border: solid 2px $mainGreen;
         }
     }
 
@@ -448,6 +470,17 @@
     .content__activity-footer-link,
     .content__activity-footer-copyright {
         @include fontOptions (12, 12, $tabletWidth, $desktopWidth, $mainFont, $fontWeight, 16, 0.05em, $textDecoration, $textTransform, $bgGray01);
+    }
+
+    .content__activity-footer-link {
+        transition: 0.3s;
+        &:hover,
+        &:active,
+        &:focus {
+            outline: none;
+            transition: 0.3s;
+            color: $mainBlack;
+        }
     }
 
     .content__activity-footer-copyright {

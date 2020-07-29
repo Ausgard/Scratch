@@ -14,5 +14,13 @@
 
 .popular-recipes__link {
     @include fontOptions (14, 14, $tabletWidth, $desktopWidth, $mainFont, $fontWeight, 22, $letterSpacing, $textDecoration, $textTransform, $fontColor);
+    transition: 0.3s;
     margin: 16px 0 0 25px;
+    &:hover,
+    &:active,
+    &:focus {
+        outline: none;
+        transition: 0.3s;
+        color: $mainBlack;
+    }
 }

@@ -1,7 +1,6 @@
 .user-card {
     @include flexGrid(column, flex-start, center, $f-wrap);
     border-radius: 8px;
-    // padding: 20px 0 0 0;
     background-color: #ffffff;
 }
 
@@ -52,6 +51,13 @@
 .user-card__s-count,
 .user-card__f-count {
     @include fontOptions (20, 20, $tabletWidth, $desktopWidth, $mainFont_b, $fontWeight, 16, $letterSpacing, $textDecoration, $textTransform, $mainBlack);
+    transition: 0.3s;
+    &:hover,
+    &:focus {
+        outline: none;
+        transition: 0.3s;
+        color: $mainGreen;
+    }
 }
 
 .user-card__r-text,

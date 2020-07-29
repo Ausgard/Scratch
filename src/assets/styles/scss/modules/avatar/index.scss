@@ -2,9 +2,19 @@
     width: 36px;
     height: 36px;
     border-radius: 50%;
+    transition: 0.3s;
+    border: solid 2px #ffffff;
     img {
         width: inherit;
         height: inherit;
+        border-radius: 50%;
+    }
+    &:hover,
+    &:active,
+    &:focus {
+        outline: none;
+        transition: 0.3s;
+        border: solid 2px $mainGreen;
     }
 }
 
