@@ -101,11 +101,22 @@
     background-color: transparent;
     border: solid 1px $mainGreen;
     border-radius: 4px;
-    padding: 0 4% 0 3.5%;
+    padding: 0 9px 0 10px;
     margin: 0 0 0 0;
     svg {
         width: 14px;
         height: 14px;
+    }
+
+    &:active {
+        color: #ffffff;
+        background-color: $mainGreen;
+    }
+
+    &:hover,
+    &:focus {
+        background-color: $mainGreen02;
+        transition: 0.1s;
     }
 
 }
@@ -320,21 +331,6 @@
 
     .content__recipe-save {
         padding: 0 12px;
-        &:active {
-            color: #ffffff;
-            background-color: $mainGreen;
-
-        }
-
-        &:hover,
-        &:focus {
-            display: flex;
-            justify-content: center;
-            transition: 0.1s;
-            svg {
-                display: none;
-            }
-        }
     }
 
     .content__user {
