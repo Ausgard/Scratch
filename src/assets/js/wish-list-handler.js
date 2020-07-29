@@ -1,7 +1,5 @@
 $(document).ready(function(){
     let likeBtn = $('.content__recipe-like')
-    let likeBtnActive = $('.content__recipe-like')
-
     likeBtn.on('click', changeIcon)
 
     function changeIcon(event) { 
